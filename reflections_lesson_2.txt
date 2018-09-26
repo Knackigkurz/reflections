@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+	If I initialize a repository, git will automaticly create a .git folder ready to store versions. It is necessary for future version tracking.
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	It's just virtual, that means, you cannot actually access files directly. It gives you better control over wich files to be commited, letting you choose to commit only one file, while having changed parts of two files. Terefore you steps are more logical and finer adjustable. The staging area is also something like a mediator.
