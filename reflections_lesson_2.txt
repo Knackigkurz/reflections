@@ -2,3 +2,14 @@ What happens when you initialize a repository? Why do you need to do it?
 	If I initialize a repository, git will automaticly create a .git folder ready to store versions. It is necessary for future version tracking.
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 	It's just virtual, that means, you cannot actually access files directly. It gives you better control over wich files to be commited, letting you choose to commit only one file, while having changed parts of two files. Terefore you steps are more logical and finer adjustable. The staging area is also something like a mediator.
+How can you use the staging area to make sure you have one commit per logical change?
+	The staging area forces you too think about how much you want to commit. If you have fixed a typo, but got busy workuing on another file you can notice that you should only commit one file. 
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	Branches are useful, if you want to experiment, leaving the original version untouched. Also multiple people can't meddle with each other's business.
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	The result is a combined version, that resembles all the changes. It is useful to automatically combine work by different people or different features
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	pro: less work with simple changes like values, or typos and additions of new functions
+	con: it might merge conflicts and therefore generates new bugs. The human mind can easyally detect what maks scence, but a machine can't. Therfore a good controlling of every merge is crucial.
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+	I would like to automatically update GitHub, so that in the worst case eitherway data can be restored. Manual updating makes scence if you are working on a new feature, that you want nobody to know about until it's finished.
